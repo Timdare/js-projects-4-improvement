@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+}
+
+.top-container{
+    background-image: url("unsplash_photo_computer_keyboard.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.top-container h1{
+    font-size: 50px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+.text{
+    margin: 50px 5%;
+    font-family: sans-serif;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .3);
+    transition: background-color .4s;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar ul li a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-family: cursive; 
+}
+
+.navbar ul li a:hover{
+    color: red;
+}
+
+.navbar.active{
+    background-color: black;
+}
+
+.navbar.active  ul li a {
+    color: white;
+}
